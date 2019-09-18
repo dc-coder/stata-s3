@@ -21,9 +21,22 @@ decision 2: I quick checked, s3api does not have sync - so when the time comes f
 
 **Proof of concept**
 
+**upload**
+
 On the regular terminal do `which aws`, this will give you the path where aws is installed, use it as a parameter to shell. For example:
 
 `shell  /xx/xxx/bin/aws s3api put-object --bucket your-bucket-name --body /path/to/local/file.txt --key file.txt`
+
+**list**
+
+List files with `shell /xx/xxx/bin/aws  s3api list-objects --bucket your-bucket-name`
+
+List files and save the outcome to a local file called list.txt `shell /xx/xxx/bin/aws  s3api list-objects --bucket your-bucket-name > list.txt`
+
+I guess same for delete... copying a folder is just a sync etc... 
+
+**reading content of a file**
+
 
 ## Method 2
 
