@@ -19,6 +19,12 @@ so decision 1, use `s3api` for simple things like upload an object, download it,
 
 decision 2: I quick checked, s3api does not have sync - so when the time comes for featuers like downloading a full folder or uploading it, use to `aws s3`
 
+**Proof of concept**
+
+on the regular terminal do `which aws`, this will give you the path with aws is installed, use it as a parameter to shell. For example:
+
+`shell  /xx/xxx/bin/aws s3api put-object --bucket bucket-name --body /path/to/local/file.txt --key file.txt`
+
 ## Method 2
 
 Will try to use curl.
