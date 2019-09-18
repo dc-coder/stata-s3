@@ -9,7 +9,7 @@ There are basically two approaches that I can think of for now.
 
 **Call the command line or shell and make the default/amazon S3 tool do the work.**
 
-Assumption: the user has aws command line interface installed and configured.
+Assumption: the user has aws command line installed and configured.
 
 **Decisions**:
 
