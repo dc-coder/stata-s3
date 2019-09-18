@@ -35,12 +35,12 @@ List files and save the outcome to a local file called list.txt `shell /xx/xxx/b
 
 I guess same for delete... copying a folder is just a sync etc... 
 
-**reading content of a file**
+**reading content of a file**  
 hmm... there is always copying locally and then importing into the data editor.
 
 I could also copy to the terminal `/dev/stdout` and see if i can pipe this back into an import... but this workaround smells fishy.
 
-I think the best way might be to use the rest api for `GET Object` which means I am gonna have to do the curl/method 2 part anyway https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectGET.html
+I think the best way might be to use the http rest api, not s3api for `GET Object` - which means I am gonna have to do the curl/method 2 part anyway https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectGET.html
 
 ## Method 2
 
