@@ -13,7 +13,7 @@ Assumption: the user has aws command line installed and configured.
 
 **Decisions**:
 
-I compared `aws s3 cp` vs `aws s3api put-object` for example. The `s3api` is lower level and kinda had nicer outputs (those outputs can also be formatted as table, json etc... which is neater)... 
+I compared `aws s3 cp` vs `aws s3api put-object` for example. The `s3api` is lower level and kinda had nicer outputs (those outputs can also be formatted as table, json etc... which is neater)...
 
 so decision 1, use `s3api` for simple things like upload an object, download it, delete it etc...
 
@@ -33,7 +33,7 @@ List files with `shell /xx/xxx/bin/aws  s3api list-objects --bucket your-bucket-
 
 List files and save the outcome to a local file called list.txt `shell /xx/xxx/bin/aws  s3api list-objects --bucket your-bucket-name > list.txt`
 
-I guess same for delete... copying a folder is just a sync etc... 
+I guess same for delete... copying a folder is just a sync etc...
 
 **reading content of a file**  
 hmm... there is always copying locally and then importing into the data editor.
@@ -45,3 +45,7 @@ I think the best way might be to use the http rest api, not s3api for `GET Objec
 ## Method 2
 
 Will try to use curl.
+
+## Note to self
+
+always add profile in the shell and set it to default.
